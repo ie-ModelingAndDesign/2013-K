@@ -227,11 +227,11 @@ static const float kDecelerationTime = 0.2;
 - (IBAction)buttonPressed:(id)sender
 {
     // デバイスのハードウェアチェック
-    if (!motionManager.deviceMotionAvailable)
+    /*if (!motionManager.deviceMotionAvailable)
     {
         NSLog(@"DeviceMotion is not available");
         return;
-    }
+    }*/
     
     if (isCounting)
     {
