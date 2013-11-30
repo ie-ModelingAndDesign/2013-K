@@ -1,0 +1,458 @@
+TTimerTest
+v7
+r0
+t334521276.003104
+cCheck dependencies
+cProcessInfoPlistFile /Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/Info.plist TimerTest-Info.plist
+cCompileXIB /Users/pfuss/Documents/Xcode/published/TimerTest/MainWindow.xib
+cCompileXIB /Users/pfuss/Documents/Xcode/published/TimerTest/TimerTestViewController.xib
+cProcessPCH /var/folders/S6/S625dy20HmGDEBSi2JzeBU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TimerTest_Prefix-cmlwvqvdqfwkfsagcowxwipusakt/TimerTest_Prefix.pch.gch TimerTest_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/main.o /Users/pfuss/Documents/Xcode/published/TimerTest/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTestAppDelegate.o /Users/pfuss/Documents/Xcode/published/TimerTest/Classes/TimerTestAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTestViewController.o /Users/pfuss/Documents/Xcode/published/TimerTest/Classes/TimerTestViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTest normal i386
+cGenerateDSYMFile /Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app.dSYM /Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTest
+cTouch /Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
+c000000004D5C9B4E0000000000000110
+t1297914702
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004D54CFFA00000000002999B0
+t1297403898
+s2726320
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004D54CFE5000000000029DA70
+t1297403877
+s2742896
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004D54CFB80000000000001466
+t1297403832
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004D5615B40000000000000AA1
+t1297487284
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004D5616030000000000766870
+t1297487363
+s7759984
+
+N/Users/pfuss/Documents/Xcode/iPhone/TimerTest/Classes/TimerTestAppDelegate.h
+c000000004E3705E200000000000001E3
+t1312228834
+s483
+i<UIKit/UIKit.h>
+
+N/Users/pfuss/Documents/Xcode/iPhone/TimerTest/Classes/TimerTestAppDelegate.m
+c000000004E3705E20000000000000AAC
+t1312228834
+s2732
+i"TimerTestAppDelegate.h"
+i"TimerTestViewController.h"
+
+N/Users/pfuss/Documents/Xcode/iPhone/TimerTest/Classes/TimerTestViewController.h
+c000000004E399A8A00000000000003BD
+t1312397962
+s957
+i<UIKit/UIKit.h>
+
+N/Users/pfuss/Documents/Xcode/iPhone/TimerTest/Classes/TimerTestViewController.m
+c000000004E399AFC0000000000000FB8
+t1312398076
+s4024
+i"TimerTestViewController.h"
+
+N/Users/pfuss/Documents/Xcode/iPhone/TimerTest/MainWindow.xib
+c000000004E3705E20000000000004E41
+t1312228834
+s20033
+
+N/Users/pfuss/Documents/Xcode/iPhone/TimerTest/TimerTestViewController.xib
+c000000004E399B5C000000000000A7DA
+t1312398172
+s42970
+
+N/Users/pfuss/Documents/Xcode/iPhone/TimerTest/TimerTest_Prefix.pch
+c000000004E3705E200000000000000BB
+t1312228834
+s187
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app
+t1312398176
+s238
+
+N/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app.dSYM
+t1312398109
+s102
+
+N/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app/Info.plist
+t1312229303
+s599
+
+N/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app/MainWindow.nib
+t1312229303
+s1685
+
+N/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app/PkgInfo
+t1312229303
+s8
+
+N/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTest
+t1312398109
+s25000
+
+N/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTestViewController.nib
+t1312398176
+s5522
+
+N/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTest.LinkFileList
+c000000004E3707B700000000000001B2
+t1312229303
+s434
+
+N/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTestAppDelegate.o
+t1312398109
+s51576
+
+N/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTestViewController.o
+t1312398109
+s54224
+
+N/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/main.o
+t1312229305
+s6324
+
+N/Users/pfuss/Documents/Xcode/iPhone/TimerTest/main.m
+c000000004E3705E30000000000000163
+t1312228835
+s355
+i<UIKit/UIKit.h>
+
+N/Users/pfuss/Documents/Xcode/published/TimerTest/Classes/TimerTestAppDelegate.h
+c000000004E3705E200000000000001E3
+t1312228834
+s483
+i<UIKit/UIKit.h>
+
+N/Users/pfuss/Documents/Xcode/published/TimerTest/Classes/TimerTestAppDelegate.m
+c000000004E3705E20000000000000AAC
+t1312228834
+s2732
+i"TimerTestAppDelegate.h"
+i"TimerTestViewController.h"
+
+N/Users/pfuss/Documents/Xcode/published/TimerTest/Classes/TimerTestViewController.h
+c000000004E399A8A00000000000003BD
+t1312397962
+s957
+i<UIKit/UIKit.h>
+
+N/Users/pfuss/Documents/Xcode/published/TimerTest/Classes/TimerTestViewController.m
+c000000004E402D0D0000000000001E4C
+t1312828685
+s7756
+i"TimerTestViewController.h"
+
+N/Users/pfuss/Documents/Xcode/published/TimerTest/MainWindow.xib
+c000000004E3705E20000000000004E41
+t1312228834
+s20033
+
+N/Users/pfuss/Documents/Xcode/published/TimerTest/TimerTestViewController.xib
+c000000004E399B5C000000000000A7DA
+t1312398172
+s42970
+
+N/Users/pfuss/Documents/Xcode/published/TimerTest/TimerTest_Prefix.pch
+c000000004E3705E200000000000000BB
+t1312228834
+s187
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app
+t1312828476
+s238
+
+N/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app.dSYM
+t1312828475
+s102
+
+N/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/Info.plist
+t1312828387
+s599
+
+N/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/MainWindow.nib
+t1312828387
+s1685
+
+N/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/PkgInfo
+t1312828387
+s8
+
+N/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTest
+t1312828475
+s25020
+
+N/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTestViewController.nib
+t1312828387
+s5522
+
+N/Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTest.LinkFileList
+c000000004E39B63C00000000000001BB
+t1312405052
+s443
+
+N/Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTestAppDelegate.o
+t1312405054
+s51580
+
+N/Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTestViewController.o
+t1312828475
+s54128
+
+N/Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/main.o
+t1312405054
+s6332
+
+N/Users/pfuss/Documents/Xcode/published/TimerTest/main.m
+c000000004E3705E30000000000000163
+t1312228835
+s355
+i<UIKit/UIKit.h>
+
+N/var/folders/S6/S625dy20HmGDEBSi2JzeBU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TimerTest_Prefix-brfpwrwzewrkupgubvmouobgylqq/TimerTest_Prefix.pch.gch
+t1312229304
+s15814064
+
+N/var/folders/S6/S625dy20HmGDEBSi2JzeBU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TimerTest_Prefix-cmlwvqvdqfwkfsagcowxwipusakt/TimerTest_Prefix.pch.gch
+t1312405053
+s15814064
+
+NTimerTest-Info.plist
+c000000004E3705E2000000000000038D
+t1312228834
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies334521275#334521275#0(0"0(0#1#0"8605405152#0"0#
+
+CCompileC build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTestAppDelegate.o /Users/pfuss/Documents/Xcode/iPhone/TimerTest/Classes/TimerTestAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s334090909.487962
+e334090909.539207
+r1
+xCompileC
+xbuild/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTestAppDelegate.o
+x/Users/pfuss/Documents/Xcode/iPhone/TimerTest/Classes/TimerTestAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@84"Compile /Users/pfuss/Documents/Xcode/iPhone/TimerTest/Classes/TimerTestAppDelegate.m334090909#334090909#0(0"0(0#0#76"/Users/pfuss/Documents/Xcode/iPhone/TimerTest/Classes/TimerTestAppDelegate.m8612082400#2071"    cd /Users/pfuss/Documents/Xcode/iPhone/TimerTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-generated-files.hmap -I/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-own-target-headers.hmap -I/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-all-target-headers.hmap -iquote /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-project-headers.hmap -F/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator -I/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/include -I/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/DerivedSources/i386 -I/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/DerivedSources -include /var/folders/S6/S625dy20HmGDEBSi2JzeBU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TimerTest_Prefix-brfpwrwzewrkupgubvmouobgylqq/TimerTest_Prefix.pch -c /Users/pfuss/Documents/Xcode/iPhone/TimerTest/Classes/TimerTestAppDelegate.m -o /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTestAppDelegate.o0#
+
+CCompileC build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTestAppDelegate.o /Users/pfuss/Documents/Xcode/published/TimerTest/Classes/TimerTestAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s334097854.005781
+e334097854.146589
+r1
+xCompileC
+xbuild/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTestAppDelegate.o
+x/Users/pfuss/Documents/Xcode/published/TimerTest/Classes/TimerTestAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@87"Compile /Users/pfuss/Documents/Xcode/published/TimerTest/Classes/TimerTestAppDelegate.m334097854#334097854#0(0"0(0#0#79"/Users/pfuss/Documents/Xcode/published/TimerTest/Classes/TimerTestAppDelegate.m8598536768#2104"    cd /Users/pfuss/Documents/Xcode/published/TimerTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-generated-files.hmap -I/Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-own-target-headers.hmap -I/Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-all-target-headers.hmap -iquote /Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-project-headers.hmap -F/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator -I/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/include -I/Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/DerivedSources/i386 -I/Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/DerivedSources -include /var/folders/S6/S625dy20HmGDEBSi2JzeBU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TimerTest_Prefix-cmlwvqvdqfwkfsagcowxwipusakt/TimerTest_Prefix.pch -c /Users/pfuss/Documents/Xcode/published/TimerTest/Classes/TimerTestAppDelegate.m -o /Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTestAppDelegate.o0#
+
+CCompileC build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTestViewController.o /Users/pfuss/Documents/Xcode/iPhone/TimerTest/Classes/TimerTestViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s334090909.488654
+e334090909.549969
+r1
+xCompileC
+xbuild/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTestViewController.o
+x/Users/pfuss/Documents/Xcode/iPhone/TimerTest/Classes/TimerTestViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@87"Compile /Users/pfuss/Documents/Xcode/iPhone/TimerTest/Classes/TimerTestViewController.m334090909#334090909#0(0"0(0#0#79"/Users/pfuss/Documents/Xcode/iPhone/TimerTest/Classes/TimerTestViewController.m8614270176#2077"    cd /Users/pfuss/Documents/Xcode/iPhone/TimerTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-generated-files.hmap -I/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-own-target-headers.hmap -I/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-all-target-headers.hmap -iquote /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-project-headers.hmap -F/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator -I/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/include -I/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/DerivedSources/i386 -I/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/DerivedSources -include /var/folders/S6/S625dy20HmGDEBSi2JzeBU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TimerTest_Prefix-brfpwrwzewrkupgubvmouobgylqq/TimerTest_Prefix.pch -c /Users/pfuss/Documents/Xcode/iPhone/TimerTest/Classes/TimerTestViewController.m -o /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTestViewController.o0#
+
+CCompileC build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTestViewController.o /Users/pfuss/Documents/Xcode/published/TimerTest/Classes/TimerTestViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s334521275.918996
+e334521275.974620
+r1
+xCompileC
+xbuild/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTestViewController.o
+x/Users/pfuss/Documents/Xcode/published/TimerTest/Classes/TimerTestViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@90"Compile /Users/pfuss/Documents/Xcode/published/TimerTest/Classes/TimerTestViewController.m334521275#334521275#0(0"0(0#0#82"/Users/pfuss/Documents/Xcode/published/TimerTest/Classes/TimerTestViewController.m8604941440#2110"    cd /Users/pfuss/Documents/Xcode/published/TimerTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-generated-files.hmap -I/Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-own-target-headers.hmap -I/Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-all-target-headers.hmap -iquote /Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-project-headers.hmap -F/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator -I/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/include -I/Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/DerivedSources/i386 -I/Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/DerivedSources -include /var/folders/S6/S625dy20HmGDEBSi2JzeBU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TimerTest_Prefix-cmlwvqvdqfwkfsagcowxwipusakt/TimerTest_Prefix.pch -c /Users/pfuss/Documents/Xcode/published/TimerTest/Classes/TimerTestViewController.m -o /Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTestViewController.o0#
+
+CCompileC build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/main.o /Users/pfuss/Documents/Xcode/iPhone/TimerTest/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s333922104.890509
+e333922105.265003
+r1
+xCompileC
+xbuild/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/main.o
+x/Users/pfuss/Documents/Xcode/iPhone/TimerTest/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@60"Compile /Users/pfuss/Documents/Xcode/iPhone/TimerTest/main.m333922104#333922105#0(0"0(0#0#52"/Users/pfuss/Documents/Xcode/iPhone/TimerTest/main.m8604308480#2031"    cd /Users/pfuss/Documents/Xcode/iPhone/TimerTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-generated-files.hmap -I/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-own-target-headers.hmap -I/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-all-target-headers.hmap -iquote /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-project-headers.hmap -F/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator -I/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/include -I/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/DerivedSources/i386 -I/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/DerivedSources -include /var/folders/S6/S625dy20HmGDEBSi2JzeBU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TimerTest_Prefix-brfpwrwzewrkupgubvmouobgylqq/TimerTest_Prefix.pch -c /Users/pfuss/Documents/Xcode/iPhone/TimerTest/main.m -o /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/main.o0#
+
+CCompileC build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/main.o /Users/pfuss/Documents/Xcode/published/TimerTest/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s334097854.004785
+e334097854.139195
+r1
+xCompileC
+xbuild/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/main.o
+x/Users/pfuss/Documents/Xcode/published/TimerTest/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/pfuss/Documents/Xcode/published/TimerTest/main.m334097854#334097854#0(0"0(0#0#55"/Users/pfuss/Documents/Xcode/published/TimerTest/main.m8603677920#2064"    cd /Users/pfuss/Documents/Xcode/published/TimerTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-generated-files.hmap -I/Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-own-target-headers.hmap -I/Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-all-target-headers.hmap -iquote /Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-project-headers.hmap -F/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator -I/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/include -I/Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/DerivedSources/i386 -I/Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/DerivedSources -include /var/folders/S6/S625dy20HmGDEBSi2JzeBU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TimerTest_Prefix-cmlwvqvdqfwkfsagcowxwipusakt/TimerTest_Prefix.pch -c /Users/pfuss/Documents/Xcode/published/TimerTest/main.m -o /Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/pfuss/Documents/Xcode/iPhone/TimerTest/MainWindow.xib
+s333922103.610980
+e333922103.975210
+r1
+xCompileXIB
+x/Users/pfuss/Documents/Xcode/iPhone/TimerTest/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib333922103#333922103#0(0"0(0#0#60"/Users/pfuss/Documents/Xcode/iPhone/TimerTest/MainWindow.xib8602198624#593"    cd /Users/pfuss/Documents/Xcode/iPhone/TimerTest    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app/MainWindow.nib /Users/pfuss/Documents/Xcode/iPhone/TimerTest/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCompileXIB /Users/pfuss/Documents/Xcode/iPhone/TimerTest/TimerTestViewController.xib
+s334090976.135971
+e334090976.518168
+r1
+xCompileXIB
+x/Users/pfuss/Documents/Xcode/iPhone/TimerTest/TimerTestViewController.xib
+lSLF07#2@38"CompileXIB TimerTestViewController.xib334090976#334090976#0(0"0(0#0#73"/Users/pfuss/Documents/Xcode/iPhone/TimerTest/TimerTestViewController.xib8612764480#619"    cd /Users/pfuss/Documents/Xcode/iPhone/TimerTest    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTestViewController.nib /Users/pfuss/Documents/Xcode/iPhone/TimerTest/TimerTestViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCompileXIB /Users/pfuss/Documents/Xcode/published/TimerTest/MainWindow.xib
+s334521187.049351
+e334521187.417032
+r1
+xCompileXIB
+x/Users/pfuss/Documents/Xcode/published/TimerTest/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib334521187#334521187#0(0"0(0#0#63"/Users/pfuss/Documents/Xcode/published/TimerTest/MainWindow.xib8601780064#602"    cd /Users/pfuss/Documents/Xcode/published/TimerTest    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/MainWindow.nib /Users/pfuss/Documents/Xcode/published/TimerTest/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCompileXIB /Users/pfuss/Documents/Xcode/published/TimerTest/TimerTestViewController.xib
+s334521187.055315
+e334521187.450971
+r1
+xCompileXIB
+x/Users/pfuss/Documents/Xcode/published/TimerTest/TimerTestViewController.xib
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@38"CompileXIB TimerTestViewController.xib334521187#334521187#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#76"/Users/pfuss/Documents/Xcode/published/TimerTest/TimerTestViewController.xib8601532288#628"    cd /Users/pfuss/Documents/Xcode/published/TimerTest    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTestViewController.nib /Users/pfuss/Documents/Xcode/published/TimerTest/TimerTestViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CGenerateDSYMFile /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app.dSYM /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTest
+s334090909.566520
+e334090909.577402
+r1
+xGenerateDSYMFile
+x/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app.dSYM
+x/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTest
+lSLF07#2@115"GenerateDSYMFile build/Debug-iphonesimulator/TimerTest.app.dSYM build/Debug-iphonesimulator/TimerTest.app/TimerTest334090909#334090909#0(0"0(0#0#97"/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTest8612974816#410"    cd /Users/pfuss/Documents/Xcode/iPhone/TimerTest    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTest -o /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app.dSYM0#
+
+CGenerateDSYMFile /Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app.dSYM /Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTest
+s334521275.990937
+e334521276.001389
+r1
+xGenerateDSYMFile
+x/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app.dSYM
+x/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTest
+lSLF07#2@115"GenerateDSYMFile build/Debug-iphonesimulator/TimerTest.app.dSYM build/Debug-iphonesimulator/TimerTest.app/TimerTest334521275#334521276#0(0"0(0#0#100"/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTest8605829568#419"    cd /Users/pfuss/Documents/Xcode/published/TimerTest    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTest -o /Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app.dSYM0#
+
+CLd /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTest normal i386
+s334090909.550057
+e334090909.566441
+r1
+xLd
+x/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTest
+xnormal
+xi386
+lSLF07#2@102"Link /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTest334090909#334090909#0(0"0(0#0#0"8614374272#945"    cd /Users/pfuss/Documents/Xcode/iPhone/TimerTest    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator -F/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator -filelist /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTest.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTest0#
+
+CLd /Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTest normal i386
+s334521275.974695
+e334521275.990857
+r1
+xLd
+x/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTest
+xnormal
+xi386
+lSLF07#2@105"Link /Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTest334521275#334521275#0(0"0(0#0#0"8605968608#960"    cd /Users/pfuss/Documents/Xcode/published/TimerTest    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator -F/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator -filelist /Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/Objects-normal/i386/TimerTest.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/TimerTest0#
+
+CProcessInfoPlistFile /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app/Info.plist TimerTest-Info.plist
+s333922103.579243
+e333922103.610796
+r1
+xProcessInfoPlistFile
+x/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app/Info.plist
+xTimerTest-Info.plist
+lSLF07#2@28"Process TimerTest-Info.plist333922103#333922103#0(0"0(0#0#66"/Users/pfuss/Documents/Xcode/iPhone/TimerTest/TimerTest-Info.plist30962724186357872#506"    cd /Users/pfuss/Documents/Xcode/iPhone/TimerTest    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility TimerTest-Info.plist -genpkginfo /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app/Info.plist0#
+
+CProcessInfoPlistFile /Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/Info.plist TimerTest-Info.plist
+s334521187.029718
+e334521187.049246
+r1
+xProcessInfoPlistFile
+x/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/Info.plist
+xTimerTest-Info.plist
+lSLF07#2@28"Process TimerTest-Info.plist334521187#334521187#0(0"0(0#0#69"/Users/pfuss/Documents/Xcode/published/TimerTest/TimerTest-Info.plist31244160508756040#515"    cd /Users/pfuss/Documents/Xcode/published/TimerTest    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility TimerTest-Info.plist -genpkginfo /Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app/Info.plist0#
+
+CProcessPCH /var/folders/S6/S625dy20HmGDEBSi2JzeBU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TimerTest_Prefix-brfpwrwzewrkupgubvmouobgylqq/TimerTest_Prefix.pch.gch TimerTest_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s333922103.998885
+e333922104.890407
+r1
+xProcessPCH
+x/var/folders/S6/S625dy20HmGDEBSi2JzeBU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TimerTest_Prefix-brfpwrwzewrkupgubvmouobgylqq/TimerTest_Prefix.pch.gch
+xTimerTest_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile TimerTest_Prefix.pch333922103#333922104#0(0"0(0#0#66"/Users/pfuss/Documents/Xcode/iPhone/TimerTest/TimerTest_Prefix.pch8601753312#1914"    cd /Users/pfuss/Documents/Xcode/iPhone/TimerTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-generated-files.hmap -I/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-own-target-headers.hmap -I/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-all-target-headers.hmap -iquote /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-project-headers.hmap -F/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator -I/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/include -I/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/DerivedSources/i386 -I/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/DerivedSources -c /Users/pfuss/Documents/Xcode/iPhone/TimerTest/TimerTest_Prefix.pch -o /var/folders/S6/S625dy20HmGDEBSi2JzeBU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TimerTest_Prefix-brfpwrwzewrkupgubvmouobgylqq/TimerTest_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/S6/S625dy20HmGDEBSi2JzeBU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TimerTest_Prefix-cmlwvqvdqfwkfsagcowxwipusakt/TimerTest_Prefix.pch.gch TimerTest_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s334097852.090965
+e334097854.004601
+r1
+xProcessPCH
+x/var/folders/S6/S625dy20HmGDEBSi2JzeBU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TimerTest_Prefix-cmlwvqvdqfwkfsagcowxwipusakt/TimerTest_Prefix.pch.gch
+xTimerTest_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile TimerTest_Prefix.pch334097852#334097854#0(0"0(0#0#69"/Users/pfuss/Documents/Xcode/published/TimerTest/TimerTest_Prefix.pch8170785853647842304#1944"    cd /Users/pfuss/Documents/Xcode/published/TimerTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-generated-files.hmap -I/Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-own-target-headers.hmap -I/Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-all-target-headers.hmap -iquote /Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/TimerTest-project-headers.hmap -F/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator -I/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/include -I/Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/DerivedSources/i386 -I/Users/pfuss/Documents/Xcode/published/TimerTest/build/TimerTest.build/Debug-iphonesimulator/TimerTest.build/DerivedSources -c /Users/pfuss/Documents/Xcode/published/TimerTest/TimerTest_Prefix.pch -o /var/folders/S6/S625dy20HmGDEBSi2JzeBU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TimerTest_Prefix-cmlwvqvdqfwkfsagcowxwipusakt/TimerTest_Prefix.pch.gch0#
+
+CTouch /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app
+s334090976.518617
+e334090976.520330
+r1
+xTouch
+x/Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app
+lSLF07#2@93"Touch /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app334090976#334090976#0(0"0(0#0#0"8609452928#294"    cd /Users/pfuss/Documents/Xcode/iPhone/TimerTest    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/pfuss/Documents/Xcode/iPhone/TimerTest/build/Debug-iphonesimulator/TimerTest.app0#
+
+CTouch /Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app
+s334521276.001458
+e334521276.003073
+r1
+xTouch
+x/Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app
+lSLF07#2@96"Touch /Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app334521276#334521276#0(0"0(0#0#0"8605748512#300"    cd /Users/pfuss/Documents/Xcode/published/TimerTest    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/pfuss/Documents/Xcode/published/TimerTest/build/Debug-iphonesimulator/TimerTest.app0#
+

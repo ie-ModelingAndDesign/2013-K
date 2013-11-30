@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  MyFirst
+//  Mysecond
 //
-//  Created by たかひろ　あふそ on 2013/11/05.
+//  Created by たかひろ　あふそ on 2013/11/21.
 //  Copyright (c) 2013年 たかひろ　あふそ. All rights reserved.
 //
 
@@ -25,9 +25,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 - (IBAction)goback:(UIStoryboardSegue *)segue{}
-
-
-
 @end
