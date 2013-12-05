@@ -10,9 +10,6 @@
 
 @interface ViewController : UIViewController{
     NSTimer *timeTicker;
-    IBOutlet UILabel *count;
-    IBOutlet UIButton *btn;
-    IBOutlet UILabel *time;
 }
 @property (weak, nonatomic) IBOutlet UILabel *count;
 

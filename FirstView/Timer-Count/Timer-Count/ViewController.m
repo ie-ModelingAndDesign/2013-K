@@ -7,32 +7,38 @@
 //
 
 #import "ViewController.h"
-int c=0;
 
+int c=0;
 @implementation ViewController
+@synthesize time;
+@synthesize btn;
+@synthesize count;
 
 - (IBAction)Start:(id)sender {
-    if([self.time.text isEqual: @"5.00"]){
-        c = 0;
-        self.count.text = @"0000";
-        timeTicker = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(showActivity) userInfo:nil repeats:YES];
-    }
+    c = 0;
+        count.text = @"0000";
+    timeTicker = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(showActivity) userInfo:nil repeats:YES];
 }
 
 -(void)showActivity{
-    [btn setEnabled:NO];
-    float currentTime = [self.time.text floatValue];
+    //[btn setEnabled:NO];
+    btn.hidden = YES;
+    float currentTime = [time.text floatValue];
     
     float displayTime = currentTime - 0.01;
     
-    self.time.text = [NSString stringWithFormat:@"%.2f", displayTime];//%.2fは少数点第二位
+    time.text = [NSString stringWithFormat:@"%.2f", displayTime];//%.2fは少数点第二位
     //↑は標準入力
     float endTime = [self.time.text floatValue];
     
     if(endTime == 0.00){
         
         [timeTicker invalidate];
-        self.time.text = @"5.00";
+        time.text = @"5.00";
+        count.text = @"0000";
+        c=0;
+        //[btn setEnabled:YES];
+        btn.hidden = NO;
     }
     
 }
@@ -73,8 +79,8 @@ int c=0;
 {
     NSLog(@"motionEnded");
     c++;
-    self.count.text = [NSString stringWithFormat:@"%04d", c];
-    NSLog(@"%d",c);
+    count.text = [NSString stringWithFormat:@"%04d", c];
+    //NSLog(@"%d",c);
 }
 
 - (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event
