@@ -7,17 +7,23 @@
 //
 
 #import "ViewController.h"
+#import "RecordViewController.h"
 
 int c=0;
+int Score=0;
 @implementation ViewController
 @synthesize time;
 @synthesize btn;
 @synthesize count;
 
-- (IBAction)Start:(id)sender {
-    c = 0;
+- (IBAction)toRecord:(id)sender{
+    if([time.text isEqual: @"5.00"]){
+        c = 0;
         count.text = @"0000";
-    timeTicker = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(showActivity) userInfo:nil repeats:YES];
+        timeTicker = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(showActivity) userInfo:nil repeats:YES];
+    }else{
+        [self performSegueWithIdentifier:@"toRecord" sender:(self)];
+    }
 }
 
 -(void)showActivity{
@@ -26,19 +32,18 @@ int c=0;
     float currentTime = [time.text floatValue];
     
     float displayTime = currentTime - 0.01;
-    
+    //NSLog(@"%.2f", displayTime);
     time.text = [NSString stringWithFormat:@"%.2f", displayTime];//%.2fは少数点第二位
     //↑は標準入力
-    float endTime = [self.time.text floatValue];
+    float endTime = [time.text floatValue];
     
     if(endTime == 0.00){
-        
+        time.text = @"0.00";
         [timeTicker invalidate];
-        time.text = @"5.00";
-        count.text = @"0000";
-        c=0;
+        Score = c;
         //[btn setEnabled:YES];
         btn.hidden = NO;
+        [btn setTitle:@"End" forState:UIControlStateNormal];
     }
     
 }
@@ -86,6 +91,14 @@ int c=0;
 - (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
     NSLog(@"motionCancelled");
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    //NSLog(@"%d",c);
+    RecordViewController *vc = [segue destinationViewController];
+    vc.score = Score;
+    //NSLog(@"%d",vc.score);
 }
 
 @end

@@ -15,7 +15,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *time;
 @property (weak, nonatomic) IBOutlet UIButton *btn;
-- (IBAction)Start:(id)sender;
+- (IBAction)toRecord:(id)sender;
 - (void)showActivity;
 
 @end

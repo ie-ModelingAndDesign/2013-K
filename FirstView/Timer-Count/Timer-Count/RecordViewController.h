@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  RecordViewController.h
 //  Timer-Count
 //
 //  Created by Takumi ITO on 2013/12/06.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface RecordViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *Record;
+@property int score;
 @end
