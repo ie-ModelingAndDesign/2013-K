@@ -16,6 +16,8 @@
 
 @synthesize score;
 @synthesize Record;
+@synthesize Total;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,6 +34,14 @@
 	// Do any additional setup after loading the view.
     //NSLog(@"%04d" ,self.score);
     Record.text = [NSString stringWithFormat:@"%04d", self.score];
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    NSMutableDictionary *defaults = [NSMutableDictionary dictionary];
+    [defaults setObject:@"0000" forKey:@"total"];
+    [ud registerDefaults:defaults];
+    [ud setInteger:self.score + [ud integerForKey:@"total"] forKey:@"total"];
+    [ud synchronize];
+    NSLog(@"%ld", [ud integerForKey:@"total"]);
+    Total.text = [NSString stringWithFormat:@"%04ld", [ud integerForKey:@"total"]];
 }
 
 - (void)didReceiveMemoryWarning
