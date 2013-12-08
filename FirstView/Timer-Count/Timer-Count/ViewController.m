@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "RecordViewController.h"
 
+int flag=0;
 int c=0;
 int Score=0;
 @implementation ViewController
@@ -44,6 +45,7 @@ int Score=0;
         //[btn setEnabled:YES];
         btn.hidden = NO;
         [btn setTitle:@"End" forState:UIControlStateNormal];
+        flag=1;
     }
     
 }
@@ -83,7 +85,9 @@ int Score=0;
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
     NSLog(@"motionEnded");
+    if(flag==0){
     c++;
+    }
     count.text = [NSString stringWithFormat:@"%04d", c];
     //NSLog(@"%d",c);
 }
