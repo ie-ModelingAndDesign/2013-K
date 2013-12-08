@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "RecordViewController.h"
 
-int flag=0;
+
 int c=0;
 int Score=0;
 @implementation ViewController
@@ -17,13 +17,39 @@ int Score=0;
 @synthesize btn;
 @synthesize count;
 
+@synthesize soundURL;
+@synthesize soundID;
+
+
+SystemSoundID soundTest;
+
+
+
+
+
 - (IBAction)toRecord:(id)sender{
     if([time.text isEqual: @"5.00"]){
+        //音を鳴らす準備
+        /*
+        NSString *testSound = [[NSBundle mainBundle] pathForResource:@"hit_sound" ofType:@"mp3"];
+        NSURL *urlOfTestSound = [NSURL fileURLWithPath:testSound];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)urlOfTestSound, &soundTest);
+        
+        
+        //これも音楽　シャカシャカ
+        CFBundleRef mainBundle;
+        mainBundle = CFBundleGetMainBundle ();
+        soundURL  = CFBundleCopyResourceURL (mainBundle,CFSTR ("test"),CFSTR ("mp3"),NULL);
+        AudioServicesCreateSystemSoundID (soundURL, &soundID);
+        CFRelease (soundURL);
+        */
+        
+        
+        
+ 
         c = 0;
         count.text = @"0000";
         timeTicker = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(showActivity) userInfo:nil repeats:YES];
-    }else{
-        [self performSegueWithIdentifier:@"toRecord" sender:(self)];
     }
 }
 
@@ -38,6 +64,7 @@ int Score=0;
     //↑は標準入力
     float endTime = [time.text floatValue];
     
+    
     if(endTime == 0.00){
         time.text = @"0.00";
         [timeTicker invalidate];
@@ -45,7 +72,10 @@ int Score=0;
         //[btn setEnabled:YES];
         btn.hidden = NO;
         [btn setTitle:@"End" forState:UIControlStateNormal];
-        flag=1;
+        
+        
+        
+        [self performSegueWithIdentifier:@"toRecord" sender:(self)];
     }
     
 }
@@ -64,7 +94,20 @@ int Score=0;
 
 - (void)viewDidLoad
 {
+
+    
     [super viewDidLoad];
+    
+    
+    
+    
+    //これも音楽　シャカシャカ
+    CFBundleRef mainBundle;
+    mainBundle = CFBundleGetMainBundle ();
+    soundURL  = CFBundleCopyResourceURL (mainBundle,CFSTR ("test"),CFSTR ("mp3"),NULL);
+    AudioServicesCreateSystemSoundID (soundURL, &soundID);
+    CFRelease (soundURL);
+
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -85,9 +128,12 @@ int Score=0;
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
     NSLog(@"motionEnded");
-    if(flag==0){
+
+    //シャカシャカ再生
+    AudioServicesPlaySystemSound (soundID);
     c++;
-    }
+    
+    
     count.text = [NSString stringWithFormat:@"%04d", c];
     //NSLog(@"%d",c);
 }
