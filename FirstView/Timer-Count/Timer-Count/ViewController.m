@@ -71,7 +71,7 @@ SystemSoundID soundTest;
         Score = c;
         //[btn setEnabled:YES];
         btn.hidden = NO;
-        [btn setTitle:@"End" forState:UIControlStateNormal];
+        //[btn setTitle:@"End" forState:UIControlStateNormal];
         
         
         
@@ -128,14 +128,15 @@ SystemSoundID soundTest;
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
     NSLog(@"motionEnded");
-
+    
     //シャカシャカ再生
     AudioServicesPlaySystemSound (soundID);
     c++;
-    
+    if([time.text  isEqual: @"0.00"]) c = 0;
     
     count.text = [NSString stringWithFormat:@"%04d", c];
-    //NSLog(@"%d",c);
+    
+    NSLog(@"%d",c);
 }
 
 - (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event

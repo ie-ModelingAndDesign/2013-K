@@ -40,8 +40,9 @@
     [ud registerDefaults:defaults];
     [ud setInteger:self.score + [ud integerForKey:@"total"] forKey:@"total"];
     [ud synchronize];
-    NSLog(@"%ld", [ud integerForKey:@"total"]);
-    Total.text = [NSString stringWithFormat:@"%04ld", [ud integerForKey:@"total"]];
+    NSLog(@"%ld", (long)[ud integerForKey:@"total"]);
+    Total.text = [NSString stringWithFormat:@"%04ld", (long)[ud integerForKey:@"total"]];
+    
 }
 
 - (void)didReceiveMemoryWarning
