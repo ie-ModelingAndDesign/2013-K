@@ -35,9 +35,12 @@
     //NSLog(@"%04d" ,self.score);
     
     
+    
+    
     //ここから 画像表示。scoreに応じて画像が異なる
-    if(self.score<50){
-        CGRect rect = CGRectMake(20, 25, 250, 300);
+         //scoreが25より小さかったら
+    if(self.score<25){
+        CGRect rect = CGRectMake(20, 20, 250, 300);
         UIImageView *imageView = [[UIImageView alloc]initWithFrame:rect];
         
         // 画像の読み込み
@@ -46,8 +49,9 @@
         // UIImageViewのインスタンスをビューに追加
         [self.view addSubview:imageView];
     }
+        //scoreが25以上50以下なら
     if(self.score>50){
-        CGRect rect = CGRectMake(20, 25, 250, 300);
+        CGRect rect = CGRectMake(20, 20, 250, 300);
         UIImageView *imageView = [[UIImageView alloc]initWithFrame:rect];
         
         // 画像の読み込み
@@ -58,6 +62,8 @@
     }
     //ここまでが画像表示
 
+    
+    
     Record.text = [NSString stringWithFormat:@"%04d", self.score];
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     NSMutableDictionary *defaults = [NSMutableDictionary dictionary];
