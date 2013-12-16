@@ -33,6 +33,31 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     //NSLog(@"%04d" ,self.score);
+    
+    
+    //ここから 画像表示。scoreに応じて画像が異なる
+    if(self.score<50){
+        CGRect rect = CGRectMake(20, 25, 250, 300);
+        UIImageView *imageView = [[UIImageView alloc]initWithFrame:rect];
+        
+        // 画像の読み込み
+        imageView.image = [UIImage imageNamed:@"cocktail1.jpg"];
+        
+        // UIImageViewのインスタンスをビューに追加
+        [self.view addSubview:imageView];
+    }
+    if(self.score>50){
+        CGRect rect = CGRectMake(20, 25, 250, 300);
+        UIImageView *imageView = [[UIImageView alloc]initWithFrame:rect];
+        
+        // 画像の読み込み
+        imageView.image = [UIImage imageNamed:@"cocktail2.jpg"];
+        
+        // UIImageViewのインスタンスをビューに追加
+        [self.view addSubview:imageView];
+    }
+    //ここまでが画像表示
+
     Record.text = [NSString stringWithFormat:@"%04d", self.score];
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     NSMutableDictionary *defaults = [NSMutableDictionary dictionary];
