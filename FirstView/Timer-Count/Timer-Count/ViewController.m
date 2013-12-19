@@ -68,7 +68,7 @@ SystemSoundID soundTest;
         Score = c;
         //[btn setEnabled:YES];
         btn.hidden = NO;
-        [btn setTitle:@"End" forState:UIControlStateNormal];
+        //[btn setTitle:@"End" forState:UIControlStateNormal];
         
         
         
@@ -158,6 +158,7 @@ SystemSoundID soundTest;
     [self becomeFirstResponder];
 }
 
+<<<<<<< HEAD
 - (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     if (event.type == UIEventTypeMotion && event.subtype == UIEventSubtypeMotionShake) {
         //シャカシャカ再生
@@ -186,6 +187,20 @@ SystemSoundID soundTest;
     
     //if ( [super respondsToSelector:@selector(motionBegan:withEvent:)] )
       //  [super motionBegan:motion withEvent:event];
+=======
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    NSLog(@"motionEnded");
+    
+    //シャカシャカ再生
+    AudioServicesPlaySystemSound (soundID);
+    c++;
+    if([time.text  isEqual: @"0.00"]) c = 0;
+    
+    count.text = [NSString stringWithFormat:@"%04d", c];
+    
+    NSLog(@"%d",c);
+>>>>>>> c15e647e6e6f9afab428021d2fcabfe7cad93e55
 }
 
 - (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event {

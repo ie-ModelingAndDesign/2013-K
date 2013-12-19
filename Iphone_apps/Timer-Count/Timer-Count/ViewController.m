@@ -44,9 +44,6 @@ SystemSoundID soundTest;
         CFRelease (soundURL);
         */
         
-        
-        
- 
         c = 0;
         count.text = @"0000";
         timeTicker = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(showActivity) userInfo:nil repeats:YES];
@@ -71,7 +68,7 @@ SystemSoundID soundTest;
         Score = c;
         //[btn setEnabled:YES];
         btn.hidden = NO;
-        [btn setTitle:@"End" forState:UIControlStateNormal];
+        //[btn setTitle:@"End" forState:UIControlStateNormal];
         
         
         
@@ -92,6 +89,47 @@ SystemSoundID soundTest;
     // e.g. self.myOutlet = nil;
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [[UIAccelerometer sharedAccelerometer] setUpdateInterval:(1.0/15)];
+    [[UIAccelerometer sharedAccelerometer] setDelegate:self];
+}
+
+- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration {
+    const float violence = 5.5;
+    static BOOL beenhere;
+    BOOL shake = FALSE;
+    
+    if (beenhere) return;
+    beenhere = TRUE;
+    /*if (acceleration.x > violence || acceleration.x < -1*violence){
+        c++;
+        AudioServicesPlaySystemSound (soundID);
+        count.text = [NSString stringWithFormat:@"%04d", c];
+        shake = TRUE;
+    }*/
+    if (acceleration.y > violence || acceleration.y < -1*violence){
+        c++;
+        count.text = [NSString stringWithFormat:@"%04d", c];
+        shake = TRUE;
+        NSLog(@"hogeY");
+    }
+    /*if (acceleration.z > violence || acceleration.z < -1*violence){
+        c++;
+        AudioServicesPlaySystemSound (soundID);
+        count.text = [NSString stringWithFormat:@"%04d", c];
+        
+        shake = TRUE;
+    }*/
+    if (shake) {
+        AudioServicesPlaySystemSound (soundID);
+        NSLog(@"shake");
+    }
+    beenhere = FALSE;
+}
+
+/*
+
 - (void)viewDidLoad
 {
 
@@ -111,58 +149,74 @@ SystemSoundID soundTest;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)viewDidAppear {
-    [self becomeFirstResponder];
-}
-
 - (BOOL)canBecomeFirstResponder
 {
     return YES;
 }
 
-- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
-{
-    NSLog(@"motionBegan");
-    
-    
-    //シャカシャカ再生
-    AudioServicesPlaySystemSound (soundID);
-    c++;
-    
-    
-    count.text = [NSString stringWithFormat:@"%04d", c];
-    //NSLog(@"%d",c);
-     
-     
+- (void)viewDidAppear{
+    [self becomeFirstResponder];
 }
 
+<<<<<<< HEAD
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (event.type == UIEventTypeMotion && event.subtype == UIEventSubtypeMotionShake) {
+        //シャカシャカ再生
+        AudioServicesPlaySystemSound (soundID);
+        c++;
+        
+        count.text = [NSString stringWithFormat:@"%04d", c];
+        //NSLog(@"%d",c);
+        
+    }
+    
+    //if ( [super respondsToSelector:@selector(motionCancelled:withEvent:)] )
+      //  [super motionCancelled:motion withEvent:event];
+}
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (event.type == UIEventTypeMotion && event.subtype == UIEventSubtypeMotionShake) {
+        //シャカシャカ再生
+        AudioServicesPlaySystemSound (soundID);
+        c++;
+        
+        count.text = [NSString stringWithFormat:@"%04d", c];
+        //NSLog(@"%d",c);
+        
+    }
+    
+    //if ( [super respondsToSelector:@selector(motionBegan:withEvent:)] )
+      //  [super motionBegan:motion withEvent:event];
+=======
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
     NSLog(@"motionEnded");
     
-    /*
     //シャカシャカ再生
     AudioServicesPlaySystemSound (soundID);
     c++;
-
+    if([time.text  isEqual: @"0.00"]) c = 0;
+    
     count.text = [NSString stringWithFormat:@"%04d", c];
-    //NSLog(@"%d",c);
-     */
     
-    
+    NSLog(@"%d",c);
+>>>>>>> c15e647e6e6f9afab428021d2fcabfe7cad93e55
 }
 
-- (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event
-{
-    NSLog(@"motionCancelled");
-    /*
-     //シャカシャカ再生
-     AudioServicesPlaySystemSound (soundID);
-     c++;
-     
-     count.text = [NSString stringWithFormat:@"%04d", c];
-     //NSLog(@"%d",c);
-     */
+- (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (event.type == UIEventTypeMotion && event.subtype == UIEventSubtypeMotionShake) {
+        //シャカシャカ再生
+        AudioServicesPlaySystemSound (soundID);
+        c++;
+        
+        count.text = [NSString stringWithFormat:@"%04d", c];
+        //NSLog(@"%d",c);
+        
+    }
+    
+    
+  //  if ( [super respondsToSelector:@selector(motionEnded:withEvent:)] )
+    //    [super motionEnded:motion withEvent:event];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -172,5 +226,7 @@ SystemSoundID soundTest;
     vc.score = Score;
     //NSLog(@"%d",vc.score);
 }
+ 
+ */
 
 @end
