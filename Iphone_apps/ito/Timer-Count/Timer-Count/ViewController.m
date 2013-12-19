@@ -28,7 +28,7 @@ SystemSoundID soundTest;
 
 
 - (IBAction)toRecord:(id)sender{
-    if([time.text isEqual: @"10.00"]){
+    if([time.text isEqual: @"5.00"]){
         //音を鳴らす準備
         /*
         NSString *testSound = [[NSBundle mainBundle] pathForResource:@"hit_sound" ofType:@"mp3"];
@@ -44,6 +44,9 @@ SystemSoundID soundTest;
         CFRelease (soundURL);
         */
         
+        
+        
+ 
         c = 0;
         count.text = @"0000";
         timeTicker = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(showActivity) userInfo:nil repeats:YES];
@@ -89,47 +92,6 @@ SystemSoundID soundTest;
     // e.g. self.myOutlet = nil;
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [[UIAccelerometer sharedAccelerometer] setUpdateInterval:(1.0/15)];
-    [[UIAccelerometer sharedAccelerometer] setDelegate:self];
-}
-
-- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration {
-    const float violence = 5.5;
-    static BOOL beenhere;
-    BOOL shake = FALSE;
-    
-    if (beenhere) return;
-    beenhere = TRUE;
-    /*if (acceleration.x > violence || acceleration.x < -1*violence){
-        c++;
-        AudioServicesPlaySystemSound (soundID);
-        count.text = [NSString stringWithFormat:@"%04d", c];
-        shake = TRUE;
-    }*/
-    if (acceleration.y > violence || acceleration.y < -1*violence){
-        c++;
-        count.text = [NSString stringWithFormat:@"%04d", c];
-        shake = TRUE;
-        NSLog(@"hogeY");
-    }
-    /*if (acceleration.z > violence || acceleration.z < -1*violence){
-        c++;
-        AudioServicesPlaySystemSound (soundID);
-        count.text = [NSString stringWithFormat:@"%04d", c];
-        
-        shake = TRUE;
-    }*/
-    if (shake) {
-        AudioServicesPlaySystemSound (soundID);
-        NSLog(@"shake");
-    }
-    beenhere = FALSE;
-}
-
-/*
-
 - (void)viewDidLoad
 {
 
@@ -142,11 +104,15 @@ SystemSoundID soundTest;
     //これも音楽　シャカシャカ
     CFBundleRef mainBundle;
     mainBundle = CFBundleGetMainBundle ();
-    soundURL  = CFBundleCopyResourceURL (mainBundle,CFSTR ("4_111"),CFSTR ("wav"),NULL);
+    soundURL  = CFBundleCopyResourceURL (mainBundle,CFSTR ("test"),CFSTR ("mp3"),NULL);
     AudioServicesCreateSystemSoundID (soundURL, &soundID);
     CFRelease (soundURL);
 
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewDidAppear {
+    [self becomeFirstResponder];
 }
 
 - (BOOL)canBecomeFirstResponder
@@ -154,54 +120,27 @@ SystemSoundID soundTest;
     return YES;
 }
 
-- (void)viewDidAppear{
-    [self becomeFirstResponder];
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    NSLog(@"motionBegan");
 }
 
-- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
-    if (event.type == UIEventTypeMotion && event.subtype == UIEventSubtypeMotionShake) {
-        //シャカシャカ再生
-        AudioServicesPlaySystemSound (soundID);
-        c++;
-        
-        count.text = [NSString stringWithFormat:@"%04d", c];
-        //NSLog(@"%d",c);
-        
-    }
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    NSLog(@"motionEnded");
+
+    //シャカシャカ再生
+    AudioServicesPlaySystemSound (soundID);
+    c++;
     
-    //if ( [super respondsToSelector:@selector(motionCancelled:withEvent:)] )
-      //  [super motionCancelled:motion withEvent:event];
+    
+    count.text = [NSString stringWithFormat:@"%04d", c];
+    //NSLog(@"%d",c);
 }
 
-- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
-    if (event.type == UIEventTypeMotion && event.subtype == UIEventSubtypeMotionShake) {
-        //シャカシャカ再生
-        AudioServicesPlaySystemSound (soundID);
-        c++;
-        
-        count.text = [NSString stringWithFormat:@"%04d", c];
-        //NSLog(@"%d",c);
-        
-    }
-    
-    //if ( [super respondsToSelector:@selector(motionBegan:withEvent:)] )
-      //  [super motionBegan:motion withEvent:event];
-}
-
-- (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event {
-    if (event.type == UIEventTypeMotion && event.subtype == UIEventSubtypeMotionShake) {
-        //シャカシャカ再生
-        AudioServicesPlaySystemSound (soundID);
-        c++;
-        
-        count.text = [NSString stringWithFormat:@"%04d", c];
-        //NSLog(@"%d",c);
-        
-    }
-    
-    
-  //  if ( [super respondsToSelector:@selector(motionEnded:withEvent:)] )
-    //    [super motionEnded:motion withEvent:event];
+- (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    NSLog(@"motionCancelled");
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -211,7 +150,5 @@ SystemSoundID soundTest;
     vc.score = Score;
     //NSLog(@"%d",vc.score);
 }
- 
- */
 
 @end
