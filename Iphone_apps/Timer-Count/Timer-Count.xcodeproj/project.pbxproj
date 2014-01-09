@@ -42,7 +42,7 @@
 		6A9E98E41854385D00A5CC7E /* hit_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hit_sound.mp3; sourceTree = "<group>"; };
 		6A9E98E61854391300A5CC7E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		6A9E98E8185441E000A5CC7E /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
-		A02D3D58185D6F68008D0848 /* bar01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bar01.jpg; path = ../../../../../../../Downloads/bar01.jpg; sourceTree = "<group>"; };
+		A02D3D58185D6F68008D0848 /* bar01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bar01.jpg; sourceTree = "<group>"; };
 		A0975A1D18518D6100D9F5D4 /* Timer-Count.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Timer-Count.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0975A2018518D6100D9F5D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A0975A2218518D6100D9F5D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
