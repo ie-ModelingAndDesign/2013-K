@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2940D569185D877A009FE202 /* 4_111.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2940D568185D877A009FE202 /* 4_111.wav */; };
+		2940D522185D7BB5009FE202 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2940D521185D7BB5009FE202 /* CoreMotion.framework */; };
 		6A9E98E51854385D00A5CC7E /* hit_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A9E98E41854385D00A5CC7E /* hit_sound.mp3 */; };
 		6A9E98E71854391300A5CC7E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9E98E61854391300A5CC7E /* AudioToolbox.framework */; };
 		6A9E98E9185441E000A5CC7E /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A9E98E8185441E000A5CC7E /* test.mp3 */; };
-		A02D3D59185D6F68008D0848 /* bar01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A02D3D58185D6F68008D0848 /* bar01.jpg */; };
 		A0975A2118518D6100D9F5D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0975A2018518D6100D9F5D4 /* Foundation.framework */; };
 		A0975A2318518D6100D9F5D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0975A2218518D6100D9F5D4 /* CoreGraphics.framework */; };
 		A0975A2518518D6100D9F5D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0975A2418518D6100D9F5D4 /* UIKit.framework */; };
@@ -40,18 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2940D568185D877A009FE202 /* 4_111.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 4_111.wav; path = ../../../../../../../Desktop/4_111.wav; sourceTree = "<group>"; };
+		2940D521185D7BB5009FE202 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		6A9E98E41854385D00A5CC7E /* hit_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hit_sound.mp3; sourceTree = "<group>"; };
 		6A9E98E61854391300A5CC7E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		6A9E98E8185441E000A5CC7E /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		A02D3D58185D6F68008D0848 /* bar01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bar01.jpg; path = ../../../../../../../Downloads/bar01.jpg; sourceTree = "<group>"; };
-=======
-<<<<<<< HEAD
-=======
-		A02D3D58185D6F68008D0848 /* bar01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bar01.jpg; path = ../../../../Desktop/bar01.jpg; sourceTree = "<group>"; };
->>>>>>> c15e647e6e6f9afab428021d2fcabfe7cad93e55
->>>>>>> 22b1c307694358c8d070cd8c6ecac5964e1c00b5
 		A0975A1D18518D6100D9F5D4 /* Timer-Count.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Timer-Count.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0975A2018518D6100D9F5D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A0975A2218518D6100D9F5D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -80,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2940D522185D7BB5009FE202 /* CoreMotion.framework in Frameworks */,
 				6A9E98E71854391300A5CC7E /* AudioToolbox.framework in Frameworks */,
 				A0975A2318518D6100D9F5D4 /* CoreGraphics.framework in Frameworks */,
 				A0975A2518518D6100D9F5D4 /* UIKit.framework in Frameworks */,
@@ -122,6 +114,7 @@
 		A0975A1F18518D6100D9F5D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2940D521185D7BB5009FE202 /* CoreMotion.framework */,
 				6A9E98E61854391300A5CC7E /* AudioToolbox.framework */,
 				A0975A2018518D6100D9F5D4 /* Foundation.framework */,
 				A0975A2218518D6100D9F5D4 /* CoreGraphics.framework */,
@@ -134,11 +127,6 @@
 		A0975A2618518D6100D9F5D4 /* Timer-Count */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				2940D568185D877A009FE202 /* 4_111.wav */,
-=======
-				A02D3D58185D6F68008D0848 /* bar01.jpg */,
->>>>>>> c15e647e6e6f9afab428021d2fcabfe7cad93e55
 				6A9E98E8185441E000A5CC7E /* test.mp3 */,
 				6A9E98E41854385D00A5CC7E /* hit_sound.mp3 */,
 				A0975A2F18518D6100D9F5D4 /* AppDelegate.h */,
@@ -259,13 +247,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A02D3D59185D6F68008D0848 /* bar01.jpg in Resources */,
 				6A9E98E51854385D00A5CC7E /* hit_sound.mp3 in Resources */,
 				6A9E98E9185441E000A5CC7E /* test.mp3 in Resources */,
 				A0975A3918518D6100D9F5D4 /* Images.xcassets in Resources */,
 				A0975A2B18518D6100D9F5D4 /* InfoPlist.strings in Resources */,
 				A0975A3418518D6100D9F5D4 /* Main.storyboard in Resources */,
-				2940D569185D877A009FE202 /* 4_111.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
