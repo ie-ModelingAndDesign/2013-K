@@ -12,6 +12,7 @@
 
 int c=0;
 int Score=0;
+int check=1;
 @implementation ViewController
 @synthesize time;
 @synthesize btn;
@@ -40,9 +41,6 @@ SystemSoundID soundTest;
         CFRelease (soundURL);
         
         
-        
-        
- 
         c = 0;
         count.text = @"0000";
         timeTicker = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(showActivity) userInfo:nil repeats:YES];
@@ -62,6 +60,7 @@ SystemSoundID soundTest;
     
     
     if(endTime == 0.00){
+        check=0;
         time.text = @"0.00";
         [timeTicker invalidate];
         Score = c;
@@ -108,7 +107,9 @@ SystemSoundID soundTest;
      }*/
     if (acceleration.y > violence || acceleration.y < -1*violence){
         c++;
+        if(check==1){
         AudioServicesPlaySystemSound (soundID);
+        }
         count.text = [NSString stringWithFormat:@"%04d", c];
         shake = TRUE;
         //NSLog(@"hogeY");
@@ -121,7 +122,9 @@ SystemSoundID soundTest;
      shake = TRUE;
      }*/
     if (shake) {
+        if(check==1){
         AudioServicesPlaySystemSound (soundID);
+        }
         //NSLog(@"shake");
     }
     beenhere = FALSE;
