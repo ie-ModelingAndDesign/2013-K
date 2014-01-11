@@ -23,14 +23,10 @@ int Score=0;
 
 SystemSoundID soundTest;
 
-
-
-
-
 - (IBAction)toRecord:(id)sender{
     if([time.text isEqual: @"5.00"]){
         //音を鳴らす準備
-        /*
+        
         NSString *testSound = [[NSBundle mainBundle] pathForResource:@"hit_sound" ofType:@"mp3"];
         NSURL *urlOfTestSound = [NSURL fileURLWithPath:testSound];
         AudioServicesCreateSystemSoundID((__bridge CFURLRef)urlOfTestSound, &soundTest);
@@ -42,7 +38,7 @@ SystemSoundID soundTest;
         soundURL  = CFBundleCopyResourceURL (mainBundle,CFSTR ("test"),CFSTR ("mp3"),NULL);
         AudioServicesCreateSystemSoundID (soundURL, &soundID);
         CFRelease (soundURL);
-        */
+        
         
         
         
@@ -131,6 +127,8 @@ SystemSoundID soundTest;
     beenhere = FALSE;
 }
     
+    
+    
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
     {
         //NSLog(@"%d",c);
@@ -138,5 +136,7 @@ SystemSoundID soundTest;
         vc.score = Score;
         //NSLog(@"%d",vc.score);
     }
+    
+    
     
 @end
