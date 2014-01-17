@@ -40,7 +40,7 @@
     //ここから 画像表示。scoreに応じて画像が異なる
          //scoreが25より小さかったら マティーニの画像を表示
     if(self.score<25){
-        CGRect rect = CGRectMake(20, 20, 250, 300);
+        CGRect rect = CGRectMake(35, 40, 250, 300);
         UIImageView *imageView = [[UIImageView alloc]initWithFrame:rect];
         
         // 画像の読み込み
@@ -51,7 +51,7 @@
     }
         //scoreが25以上50以下なら ミントジュレップの画像を表示
     if(self.score>=25 && self.score<=50){
-        CGRect rect = CGRectMake(20, 20, 250, 300);
+        CGRect rect = CGRectMake(35, 40, 250, 300);
         UIImageView *imageView = [[UIImageView alloc]initWithFrame:rect];
         
         // 画像の読み込み

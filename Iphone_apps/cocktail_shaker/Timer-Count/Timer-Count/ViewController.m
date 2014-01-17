@@ -8,10 +8,16 @@
 
 #import "ViewController.h"
 #import "RecordViewController.h"
+#import "FrameByFrameAnimation.h"
+
+UIImageView *imageView_;
+UIImageView *imageView2_;
+
 
 
 int c=0;
 int Score=0;
+int check=1;
 @implementation ViewController
 @synthesize time;
 @synthesize btn;
@@ -24,13 +30,21 @@ int Score=0;
 SystemSoundID soundTest;
 
 
-
+//アニメーションのフレームレート
+float const _animationFps = 12.0f;
+//アニメーションのリピート回数を無限に指定
+NSInteger _animationRepeatNum = 0;
+//アニメーションの座標・寸法指定
+NSInteger _animationImageX;
+NSInteger _animationImageY;
+NSInteger const _animationImageWidth = 200;
+NSInteger const _animationImageHeight = 200;
 
 
 - (IBAction)toRecord:(id)sender{
     if([time.text isEqual: @"5.00"]){
         //音を鳴らす準備
-        /*
+        
         NSString *testSound = [[NSBundle mainBundle] pathForResource:@"hit_sound" ofType:@"mp3"];
         NSURL *urlOfTestSound = [NSURL fileURLWithPath:testSound];
         AudioServicesCreateSystemSoundID((__bridge CFURLRef)urlOfTestSound, &soundTest);
@@ -42,10 +56,6 @@ SystemSoundID soundTest;
         soundURL  = CFBundleCopyResourceURL (mainBundle,CFSTR ("test"),CFSTR ("mp3"),NULL);
         AudioServicesCreateSystemSoundID (soundURL, &soundID);
         CFRelease (soundURL);
-        */
-        
-        
-        
  
         c = 0;
         count.text = @"0000";
@@ -64,8 +74,8 @@ SystemSoundID soundTest;
     //↑は標準入力
     float endTime = [time.text floatValue];
     
-    
     if(endTime == 0.00){
+        check=0;
         time.text = @"0.00";
         [timeTicker invalidate];
         Score = c;
@@ -92,10 +102,14 @@ SystemSoundID soundTest;
     // e.g. self.myOutlet = nil;
 }
 - (void)viewDidLoad {
+    //NSLog(@"hoge");
+    check=1;
     [super viewDidLoad];
+    [self startAnimationImage];
     [[UIAccelerometer sharedAccelerometer] setUpdateInterval:(1.0/15)];
     [[UIAccelerometer sharedAccelerometer] setDelegate:self];
 }
+
 
 - (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration {
     const float violence = 5.5;
@@ -112,9 +126,12 @@ SystemSoundID soundTest;
      }*/
     if (acceleration.y > violence || acceleration.y < -1*violence){
         c++;
+        if(check==1){
+            AudioServicesPlaySystemSound (soundID);
+        }
         count.text = [NSString stringWithFormat:@"%04d", c];
         shake = TRUE;
-        NSLog(@"hogeY");
+        //NSLog(@"hogeY");
     }
     /*if (acceleration.z > violence || acceleration.z < -1*violence){
      c++;
@@ -124,9 +141,52 @@ SystemSoundID soundTest;
      shake = TRUE;
      }*/
     if (shake) {
-        AudioServicesPlaySystemSound (soundID);
-        NSLog(@"shake");
+        if(check==1){
+            AudioServicesPlaySystemSound (soundID);
+            NSLog(@"shake");
+            NSLog(@"check=%d",check);
+        }
     }
     beenhere = FALSE;
 }
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    //NSLog(@"%d",c);
+    RecordViewController *vc = [segue destinationViewController];
+    vc.score = Score;
+    //NSLog(@"%d",vc.score);
+}
+
+- (void)startAnimationImage
+{
+    //クラス初期化
+    FrameByFrameAnimation *fbfAnimation = [[FrameByFrameAnimation alloc] init];
+    //アニメーションの総フレーム数
+    NSInteger animationFrames = 4;
+    //アニメーションファイルの接頭詞
+    NSString *animationPrefix = @"shaker";
+    //アニメーションをセンターに配置
+    
+    NSInteger _animationImageX = (self.view.frame.size.width /2) - (_animationImageWidth / 2);
+    NSInteger _animationImageY = (self.view.frame.size.height /2) - (_animationImageHeight / 2);
+    
+    //アニメーション開始
+    [fbfAnimation setAnimating:animationFrames
+                              :animationPrefix
+                              :[self animationSeconds:animationFrames]
+                              :_animationRepeatNum
+                              :_animationImageX
+                              :_animationImageY
+                              :_animationImageWidth
+                              :_animationImageHeight];
+    //ステージに追加
+    [self.view addSubview:[fbfAnimation animationImageView]];
+}
+
+//アニメーション秒数を取得
+- (float)animationSeconds:(NSInteger)animationFrames
+{
+    return (animationFrames / _animationFps);
+}
+
 @end

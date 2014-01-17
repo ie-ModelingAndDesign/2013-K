@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <AudioToolbox/AudioServices.h>
-
+#import <ImageIO/ImageIO.h>
+//#import <MobileCoreServices/MobileCoreServices.h>
 
 
 
@@ -17,7 +18,7 @@
     CFURLRef soundURL;
     SystemSoundID soundID;
     
-    
+    UIImage* image;
  
     NSTimer *timeTicker;
 }

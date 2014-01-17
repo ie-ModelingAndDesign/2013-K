@@ -87,6 +87,7 @@ SystemSoundID soundTest;
     // e.g. self.myOutlet = nil;
 }
 - (void)viewDidLoad {
+    check=1;
     [super viewDidLoad];
     [[UIAccelerometer sharedAccelerometer] setUpdateInterval:(1.0/15)];
     [[UIAccelerometer sharedAccelerometer] setDelegate:self];

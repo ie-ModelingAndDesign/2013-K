@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		299F76F918877E0A0056A215 /* SHAKE.png in Resources */ = {isa = PBXBuildFile; fileRef = 299F76F818877E0A0056A215 /* SHAKE.png */; };
+		299F76FD1888CD090056A215 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299F76FC1888CD090056A215 /* ImageIO.framework */; };
+		299F770A1888D69F0056A215 /* FrameByFrameAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 299F77091888D69F0056A215 /* FrameByFrameAnimation.m */; };
+		299F770F1888D8AC0056A215 /* shaker1.png in Resources */ = {isa = PBXBuildFile; fileRef = 299F770B1888D8AC0056A215 /* shaker1.png */; };
+		299F77101888D8AC0056A215 /* shaker2.png in Resources */ = {isa = PBXBuildFile; fileRef = 299F770C1888D8AC0056A215 /* shaker2.png */; };
+		299F77111888D8AC0056A215 /* shaker3.png in Resources */ = {isa = PBXBuildFile; fileRef = 299F770D1888D8AC0056A215 /* shaker3.png */; };
+		299F77121888D8AC0056A215 /* shaker4.png in Resources */ = {isa = PBXBuildFile; fileRef = 299F770E1888D8AC0056A215 /* shaker4.png */; };
 		6A9E98E51854385D00A5CC7E /* hit_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A9E98E41854385D00A5CC7E /* hit_sound.mp3 */; };
 		6A9E98E71854391300A5CC7E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9E98E61854391300A5CC7E /* AudioToolbox.framework */; };
 		6A9E98E9185441E000A5CC7E /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A9E98E8185441E000A5CC7E /* test.mp3 */; };
@@ -39,6 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		299F76F818877E0A0056A215 /* SHAKE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SHAKE.png; sourceTree = "<group>"; };
+		299F76FC1888CD090056A215 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		299F77081888D68B0056A215 /* FrameByFrameAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FrameByFrameAnimation.h; path = "../../../../../../../../Downloads/objc-frame-by-frame-animation-master/FrameByFrameAnimation/FrameByFrameAnimation/FrameByFrameAnimation.h"; sourceTree = "<group>"; };
+		299F77091888D69F0056A215 /* FrameByFrameAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FrameByFrameAnimation.m; path = "../../../../../../../../Downloads/objc-frame-by-frame-animation-master/FrameByFrameAnimation/FrameByFrameAnimation/FrameByFrameAnimation.m"; sourceTree = "<group>"; };
+		299F770B1888D8AC0056A215 /* shaker1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shaker1.png; path = ../../../../../../../../Downloads/hoge/shaker1.png; sourceTree = "<group>"; };
+		299F770C1888D8AC0056A215 /* shaker2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shaker2.png; path = ../../../../../../../../Downloads/hoge/shaker2.png; sourceTree = "<group>"; };
+		299F770D1888D8AC0056A215 /* shaker3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shaker3.png; path = ../../../../../../../../Downloads/hoge/shaker3.png; sourceTree = "<group>"; };
+		299F770E1888D8AC0056A215 /* shaker4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shaker4.png; path = ../../../../../../../../Downloads/hoge/shaker4.png; sourceTree = "<group>"; };
 		6A9E98E41854385D00A5CC7E /* hit_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hit_sound.mp3; sourceTree = "<group>"; };
 		6A9E98E61854391300A5CC7E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		6A9E98E8185441E000A5CC7E /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
@@ -71,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				299F76FD1888CD090056A215 /* ImageIO.framework in Frameworks */,
 				6A9E98E71854391300A5CC7E /* AudioToolbox.framework in Frameworks */,
 				A0975A2318518D6100D9F5D4 /* CoreGraphics.framework in Frameworks */,
 				A0975A2518518D6100D9F5D4 /* UIKit.framework in Frameworks */,
@@ -113,6 +129,7 @@
 		A0975A1F18518D6100D9F5D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				299F76FC1888CD090056A215 /* ImageIO.framework */,
 				6A9E98E61854391300A5CC7E /* AudioToolbox.framework */,
 				A0975A2018518D6100D9F5D4 /* Foundation.framework */,
 				A0975A2218518D6100D9F5D4 /* CoreGraphics.framework */,
@@ -125,6 +142,13 @@
 		A0975A2618518D6100D9F5D4 /* Timer-Count */ = {
 			isa = PBXGroup;
 			children = (
+				299F770B1888D8AC0056A215 /* shaker1.png */,
+				299F770C1888D8AC0056A215 /* shaker2.png */,
+				299F770D1888D8AC0056A215 /* shaker3.png */,
+				299F770E1888D8AC0056A215 /* shaker4.png */,
+				299F77091888D69F0056A215 /* FrameByFrameAnimation.m */,
+				299F77081888D68B0056A215 /* FrameByFrameAnimation.h */,
+				299F76F818877E0A0056A215 /* SHAKE.png */,
 				A02D3D58185D6F68008D0848 /* bar01.jpg */,
 				6A9E98E8185441E000A5CC7E /* test.mp3 */,
 				6A9E98E41854385D00A5CC7E /* hit_sound.mp3 */,
@@ -247,11 +271,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A02D3D59185D6F68008D0848 /* bar01.jpg in Resources */,
+				299F77111888D8AC0056A215 /* shaker3.png in Resources */,
+				299F76F918877E0A0056A215 /* SHAKE.png in Resources */,
 				6A9E98E51854385D00A5CC7E /* hit_sound.mp3 in Resources */,
 				6A9E98E9185441E000A5CC7E /* test.mp3 in Resources */,
 				A0975A3918518D6100D9F5D4 /* Images.xcassets in Resources */,
+				299F770F1888D8AC0056A215 /* shaker1.png in Resources */,
 				A0975A2B18518D6100D9F5D4 /* InfoPlist.strings in Resources */,
 				A0975A3418518D6100D9F5D4 /* Main.storyboard in Resources */,
+				299F77121888D8AC0056A215 /* shaker4.png in Resources */,
+				299F77101888D8AC0056A215 /* shaker2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				299F770A1888D69F0056A215 /* FrameByFrameAnimation.m in Sources */,
 				A0975A3718518D6100D9F5D4 /* ViewController.m in Sources */,
 				A0975A3118518D6100D9F5D4 /* AppDelegate.m in Sources */,
 				A0975A2D18518D6100D9F5D4 /* main.m in Sources */,
