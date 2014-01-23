@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "RecordViewController.h"
 #import "FrameByFrameAnimation.h"
+#import "Chose.h"
 
 UIImageView *imageView_;
 UIImageView *imageView2_;
@@ -22,6 +23,7 @@ int check=1;
 @synthesize time;
 @synthesize btn;
 @synthesize count;
+@synthesize button_no;
 
 @synthesize soundURL;
 @synthesize soundID;
@@ -82,7 +84,6 @@ NSInteger const _animationImageHeight = 200;
         //[btn setEnabled:YES];
         btn.hidden = NO;
         //[btn setTitle:@"End" forState:UIControlStateNormal];
-        
         
         
         [self performSegueWithIdentifier:@"toRecord" sender:(self)];
@@ -154,6 +155,13 @@ NSInteger const _animationImageHeight = 200;
     //NSLog(@"%d",c);
     RecordViewController *vc = [segue destinationViewController];
     vc.score = Score;
+    if (self.button_no == 1){
+        vc.button_n = 1;
+    }else if (self.button_no == 2){
+        vc.button_n = 2;
+    }else if (self.button_no == 3){
+        vc.button_n = 3;
+    }
     //NSLog(@"%d",vc.score);
 }
 
@@ -189,4 +197,6 @@ NSInteger const _animationImageHeight = 200;
     return (animationFrames / _animationFps);
 }
 
+- (IBAction)goback:(UIStoryboardSegue *)segue{}
+    
 @end

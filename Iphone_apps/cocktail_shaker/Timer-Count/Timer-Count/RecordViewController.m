@@ -16,6 +16,8 @@
 
 @synthesize score;
 @synthesize Record;
+@synthesize name;
+@synthesize button_n;
 @synthesize Total;
 
 
@@ -28,6 +30,8 @@
     return self;
 }
 
+
+    
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -39,27 +43,96 @@
     
     //ここから 画像表示。scoreに応じて画像が異なる
          //scoreが25より小さかったら マティーニの画像を表示
-    if(self.score<25){
-        CGRect rect = CGRectMake(35, 40, 250, 300);
-        UIImageView *imageView = [[UIImageView alloc]initWithFrame:rect];
-        
-        // 画像の読み込み
-        imageView.image = [UIImage imageNamed:@"cocktail1.jpg"];
-        
-        // UIImageViewのインスタンスをビューに追加
-        [self.view addSubview:imageView];
-    }
-        //scoreが25以上50以下なら ミントジュレップの画像を表示
-    if(self.score>=25 && self.score<=50){
-        CGRect rect = CGRectMake(35, 40, 250, 300);
-        UIImageView *imageView = [[UIImageView alloc]initWithFrame:rect];
-        
-        // 画像の読み込み
-        imageView.image = [UIImage imageNamed:@"cocktail2.jpg"];
-        
-        // UIImageViewのインスタンスをビューに追加
-        [self.view addSubview:imageView];
-    }
+    
+    CGRect rect = CGRectMake(35, 40, 250, 300);
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:rect];
+    
+    if (self.button_n == 1){
+        if (self.score <= 20){
+        	imageView.image = [UIImage imageNamed:@"bluemoon_1.jpg"];
+        	[self.view addSubview:imageView];
+            name.text = @"ブルームーン";
+        	NSLog(@"ブルームーン");
+        }else if ( 20 < self.score <= 40){
+        	imageView.image = [UIImage imageNamed:@"ginlime_2.jpg"];
+        	[self.view addSubview:imageView];
+            name.text = @"ジンライム";
+            NSLog(@"ジンライム");
+            
+        }else if ( 40 < self.score <= 60){
+        	imageView.image = [UIImage imageNamed:@"gintonic_3.jpg"];
+        	[self.view addSubview:imageView];
+            name.text = @"ジントニック";
+            NSLog(@"ジントニック");
+            
+            
+        }else if ( 60 < self.score  <= 80){
+            imageView.image = [UIImage imageNamed:@"gimlet_4.jpg"];
+        	[self.view addSubview:imageView];
+            name.text = @"ギムレット";
+            NSLog(@"ギムレット");
+        }else if ( 80 < self.score  <= 100){
+            imageView.image = [UIImage imageNamed:@"martini_5.jpg"];
+        	[self.view addSubview:imageView];
+            name.text = @"マティーニ";
+            NSLog(@"マティーニ");
+        }
+    }else if (self.button_n == 2){
+        if (self.score <= 20){
+            imageView.image = [UIImage imageNamed:@"bonbon_1.jpg"];
+        	[self.view addSubview:imageView];
+            name.text = @"ウィスキーボンボン";
+        	NSLog(@"ウィスキーボンボン");
+        }else if (20 < self.score <= 40){
+            imageView.image = [UIImage imageNamed:@"scotchkilt_2.jpg"];
+        	[self.view addSubview:imageView];
+            name.text = @"スコッチキルト";
+            NSLog(@"スコッチキルト");
+        }else if (40 < self.score <= 60){
+        	imageView.image = [UIImage imageNamed:@"mint_3.jpg"];
+        	[self.view addSubview:imageView];
+            name.text = @"ミントジュレップ";
+            NSLog(@"ミントジュレップ");
+        }else if (60 < self.score  <= 80){
+        	imageView.image = [UIImage imageNamed:@"whiskysoda_4.jpg"];
+        	[self.view addSubview:imageView];
+            name.text = @"ウィスキーソーダ";
+            NSLog(@"ウィスキーソーダ");
+        }else if (80 < self.score  <= 100){
+            imageView.image = [UIImage imageNamed:@"irish_coffee_5.jpg"];
+        	[self.view addSubview:imageView];
+            name.text = @"アイリッシュコーヒー";
+            NSLog(@"アイリッシュコーヒー");
+        }
+    }else if (self.button_n == 3){
+        if (self.score <= 20){
+        	imageView.image = [UIImage imageNamed:@"bluetrip_1.jpg"];
+        	[self.view addSubview:imageView];
+            name.text = @"ブルートリップ";
+        	NSLog(@"ブルートリップ");
+        }else if (20 < self.score <= 40){
+        	imageView.image = [UIImage imageNamed:@"sunrise_2.jpg"];
+        	[self.view addSubview:imageView];
+            name.text = @"テキーラサンライズ";
+            NSLog(@"テキーラサンライズ");
+        }else if (40 < self.score <= 60){
+        	imageView.image = [UIImage imageNamed:@"matador_3.jpg"];
+        	[self.view addSubview:imageView];
+            name.text = @"マタドール";
+            NSLog(@"マタドール");
+        }else if (60 < self.score  <= 80){
+            imageView.image = [UIImage imageNamed:@"risingsun_4.jpg"];
+        	[self.view addSubview:imageView];
+            name.text = @"ライジングサン";
+            NSLog(@"ランジングサン");
+        }else if (80 < self.score  <= 100){
+            imageView.image = [UIImage imageNamed:@"margarita_5.jpg"];
+        	[self.view addSubview:imageView];
+            name.text = @"マルガリータ";
+            NSLog(@"マルガリータ");
+        }
+	}
+
     //ここまでが画像表示
 
     
@@ -73,6 +146,8 @@
     [ud synchronize];
     NSLog(@"%ld", (long)[ud integerForKey:@"total"]);
     Total.text = [NSString stringWithFormat:@"%04ld", (long)[ud integerForKey:@"total"]];
+    
+    
     
 }
 

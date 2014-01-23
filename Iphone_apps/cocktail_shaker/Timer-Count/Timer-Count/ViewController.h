@@ -23,17 +23,14 @@
     NSTimer *timeTicker;
 }
 @property (weak, nonatomic) IBOutlet UILabel *count;
-
 @property (weak, nonatomic) IBOutlet UILabel *time;
 @property (weak, nonatomic) IBOutlet UIButton *btn;
 - (IBAction)toRecord:(id)sender;
+    @property int button_no;
 - (void)showActivity;
-
-
 
 @property(readwrite) CFURLRef soundURL;
 @property(readonly) SystemSoundID soundID;
-
 
 
 @end

@@ -11,5 +11,9 @@
 @interface RecordViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *Record;
 @property int score;
+@property int button_n;
+    
+@property (weak, nonatomic) IBOutlet UILabel *name;
+    
 @property (weak, nonatomic) IBOutlet UILabel *Total;
 @end
