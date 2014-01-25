@@ -30,6 +30,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    NSMutableDictionary *defaults = [NSMutableDictionary dictionary];
+    [defaults setObject:@"0000" forKey:@"total"];
+    [ud registerDefaults:defaults];
     Total.text = [NSString stringWithFormat:@"%04ld", (long)[ud integerForKey:@"total"]];
 }
 
