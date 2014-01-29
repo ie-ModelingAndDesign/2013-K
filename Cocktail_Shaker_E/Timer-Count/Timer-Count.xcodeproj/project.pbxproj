@@ -35,7 +35,7 @@
 		6A9E98E71854391300A5CC7E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9E98E61854391300A5CC7E /* AudioToolbox.framework */; };
 		6A9E98E9185441E000A5CC7E /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A9E98E8185441E000A5CC7E /* test.mp3 */; };
 		A02D3D59185D6F68008D0848 /* bar01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A02D3D58185D6F68008D0848 /* bar01.jpg */; };
-		A0416630189385D200F6FE9A /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = A041662F189385D200F6FE9A /* Start.m */; };
+		A041663318939E8C00F6FE9A /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = A041663218939E8C00F6FE9A /* Start.m */; };
 		A0975A2118518D6100D9F5D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0975A2018518D6100D9F5D4 /* Foundation.framework */; };
 		A0975A2318518D6100D9F5D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0975A2218518D6100D9F5D4 /* CoreGraphics.framework */; };
 		A0975A2518518D6100D9F5D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0975A2418518D6100D9F5D4 /* UIKit.framework */; };
@@ -94,8 +94,8 @@
 		6A9E98E61854391300A5CC7E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		6A9E98E8185441E000A5CC7E /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
 		A02D3D58185D6F68008D0848 /* bar01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bar01.jpg; sourceTree = "<group>"; };
-		A041662E189385D200F6FE9A /* Start.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Start.h; sourceTree = "<group>"; };
-		A041662F189385D200F6FE9A /* Start.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Start.m; sourceTree = "<group>"; };
+		A041663118939E8C00F6FE9A /* Start.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Start.h; sourceTree = "<group>"; };
+		A041663218939E8C00F6FE9A /* Start.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Start.m; sourceTree = "<group>"; };
 		A0975A1D18518D6100D9F5D4 /* Timer-Count.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Timer-Count.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0975A2018518D6100D9F5D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A0975A2218518D6100D9F5D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -241,8 +241,8 @@
 				295FAC8E1890ADAC00B9E612 /* Chose.m */,
 				295FAC8D1890ADAC00B9E612 /* Chose.h */,
 				A0975A2718518D6100D9F5D4 /* Supporting Files */,
-				A041662E189385D200F6FE9A /* Start.h */,
-				A041662F189385D200F6FE9A /* Start.m */,
+				A041663118939E8C00F6FE9A /* Start.h */,
+				A041663218939E8C00F6FE9A /* Start.m */,
 			);
 			path = "Timer-Count";
 			sourceTree = "<group>";
@@ -398,7 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				295FAC8F1890ADAC00B9E612 /* Chose.m in Sources */,
-				A0416630189385D200F6FE9A /* Start.m in Sources */,
+				A041663318939E8C00F6FE9A /* Start.m in Sources */,
 				299F77191888EDC80056A215 /* FrameByFrameAnimation.m in Sources */,
 				A0975A3718518D6100D9F5D4 /* ViewController.m in Sources */,
 				A0975A3118518D6100D9F5D4 /* AppDelegate.m in Sources */,

@@ -46,7 +46,6 @@
     CGRect rect = CGRectMake(35, 40, 250, 300);
     UIImageView *imageView = [[UIImageView alloc]initWithFrame:rect];
     
-    NSLog(@"%04d", self.score);
     if (self.button_n == 1){
         if (self.score <= 20){
         	imageView.image = [UIImage imageNamed:@"bluemoon_1.jpg"];
@@ -65,7 +64,8 @@
             name.text = @"ジントニック";
             NSLog(@"ジントニック");
             
-        }else if ( 60 < self.score && self.score  <= 80){
+            
+        }else if ( 60 < self.score && self.score <= 80){
             imageView.image = [UIImage imageNamed:@"gimlet_4.jpg"];
         	[self.view addSubview:imageView];
             name.text = @"ギムレット";
@@ -92,8 +92,7 @@
         	[self.view addSubview:imageView];
             name.text = @"ミントジュレップ";
             NSLog(@"ミントジュレップ");
-        }else if (60 < self.score && self.score  <= 80){
-
+        }else if (60 < self.score && self.score <= 80){
         	imageView.image = [UIImage imageNamed:@"whiskysoda_4.jpg"];
         	[self.view addSubview:imageView];
             name.text = @"ウィスキーソーダ";
@@ -120,9 +119,7 @@
         	[self.view addSubview:imageView];
             name.text = @"マタドール";
             NSLog(@"マタドール");
-
-        }else if (60 < self.score && self.score  <= 80){
-
+        }else if (60 < self.score && self.score <= 80){
             imageView.image = [UIImage imageNamed:@"risingsun_4.jpg"];
         	[self.view addSubview:imageView];
             name.text = @"ライジングサン";
@@ -141,13 +138,9 @@
     
     Record.text = [NSString stringWithFormat:@"%04d", self.score];
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    NSMutableDictionary *defaults = [NSMutableDictionary dictionary];
-    [defaults setObject:@"0000" forKey:@"total"];
-    [ud registerDefaults:defaults];
     [ud setInteger:self.score + [ud integerForKey:@"total"] forKey:@"total"];
     [ud synchronize];
     NSLog(@"%ld", (long)[ud integerForKey:@"total"]);
-    
     
     
 }
