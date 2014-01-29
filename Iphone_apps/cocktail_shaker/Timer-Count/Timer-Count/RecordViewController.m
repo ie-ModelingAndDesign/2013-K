@@ -17,6 +17,7 @@
 @synthesize score;
 @synthesize Record;
 @synthesize name;
+@synthesize lank;
 @synthesize button_n;
 @synthesize Total;
 
@@ -52,21 +53,22 @@
         	imageView.image = [UIImage imageNamed:@"bluemoon_1.jpg"];
         	[self.view addSubview:imageView];
             name.text = @"ブルームーン";
+            
         	NSLog(@"ブルームーン");
-        }else if ( 20 < self.score <= 40){
+        }else if ( 20 < self.score && self.score <= 40){
         	imageView.image = [UIImage imageNamed:@"ginlime_2.jpg"];
         	[self.view addSubview:imageView];
             name.text = @"ジンライム";
             NSLog(@"ジンライム");
             
-        }else if ( 40 < self.score <= 60){
+        }else if ( 40 < self.score && self.score <= 60){
         	imageView.image = [UIImage imageNamed:@"gintonic_3.jpg"];
         	[self.view addSubview:imageView];
             name.text = @"ジントニック";
             NSLog(@"ジントニック");
             
             
-        }else if ( 60 < self.score  <= 80){
+        }else if ( 60 < self.score && self.score <= 80){
             imageView.image = [UIImage imageNamed:@"gimlet_4.jpg"];
         	[self.view addSubview:imageView];
             name.text = @"ギムレット";
@@ -83,17 +85,17 @@
         	[self.view addSubview:imageView];
             name.text = @"ウィスキーボンボン";
         	NSLog(@"ウィスキーボンボン");
-        }else if (20 < self.score <= 40){
+        }else if (20 < self.score && self.score <= 40){
             imageView.image = [UIImage imageNamed:@"scotchkilt_2.jpg"];
         	[self.view addSubview:imageView];
             name.text = @"スコッチキルト";
             NSLog(@"スコッチキルト");
-        }else if (40 < self.score <= 60){
+        }else if (40 < self.score && self.score <= 60){
         	imageView.image = [UIImage imageNamed:@"mint_3.jpg"];
         	[self.view addSubview:imageView];
             name.text = @"ミントジュレップ";
             NSLog(@"ミントジュレップ");
-        }else if (60 < self.score  <= 80){
+        }else if (60 < self.score && self.score  <= 80){
         	imageView.image = [UIImage imageNamed:@"whiskysoda_4.jpg"];
         	[self.view addSubview:imageView];
             name.text = @"ウィスキーソーダ";
@@ -110,17 +112,17 @@
         	[self.view addSubview:imageView];
             name.text = @"ブルートリップ";
         	NSLog(@"ブルートリップ");
-        }else if (20 < self.score <= 40){
+        }else if (20 < self.score && self.score <= 40){
         	imageView.image = [UIImage imageNamed:@"sunrise_2.jpg"];
         	[self.view addSubview:imageView];
             name.text = @"テキーラサンライズ";
             NSLog(@"テキーラサンライズ");
-        }else if (40 < self.score <= 60){
+        }else if (40 < self.score && self.score <= 60){
         	imageView.image = [UIImage imageNamed:@"matador_3.jpg"];
         	[self.view addSubview:imageView];
             name.text = @"マタドール";
             NSLog(@"マタドール");
-        }else if (60 < self.score  <= 80){
+        }else if (60 < self.score && self.score <= 80){
             imageView.image = [UIImage imageNamed:@"risingsun_4.jpg"];
         	[self.view addSubview:imageView];
             name.text = @"ライジングサン";

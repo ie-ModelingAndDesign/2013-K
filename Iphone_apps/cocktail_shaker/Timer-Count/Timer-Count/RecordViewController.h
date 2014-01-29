@@ -14,6 +14,7 @@
 @property int button_n;
     
 @property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *lank;
     
 @property (weak, nonatomic) IBOutlet UILabel *Total;
 @end
